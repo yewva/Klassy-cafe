@@ -864,6 +864,7 @@ label {
     }
     .reservation{
         width: 100%;
+        padding:10px;
     }
     .reservation .inputbox{
         flex-direction: column;
