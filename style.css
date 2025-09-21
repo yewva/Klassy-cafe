@@ -1,0 +1,879 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9999999999;
+}
+
+header ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    list-style: none;
+}
+
+header ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+header ul li:first-child a {
+    color: #fb5849;
+}
+
+header ul a:hover {
+    color: #fb5849;
+    transition: .2s;
+}
+
+.bunner {
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbunnerinfo {
+    width: 600px;
+    height: 500px;
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/top-left-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+.bunnerside {
+    width: 1000px;
+    height: 500px;
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/slide-01.jpg);
+
+}
+
+.aboutbox {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 100px 0;
+    flex-wrap: wrap;
+
+}
+
+.aboutinfo {
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.mainbunnerinfo h1 {
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.mainbunnerinfo h4 {
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+.aboutinfo p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainbunnerinfo a {
+    padding: 10px 20px;
+    background-color: white;
+    color: #fb5849;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: .4s;
+
+}
+
+.mainbunnerinfo a:hover {
+    opacity: .9;
+}
+
+.aboutinfo h3 {
+    color: #fb5849;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.aboutinfo h3:before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: #fb5849;
+    position: absolute;
+    left: -70%;
+}
+
+.aboutinfo ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.aboutinfo img {
+    width: 120px;
+}
+
+.aboutvideo {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/about-video-bg.jpg);
+}
+
+.aboutvideo div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fb5849;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: .4s;
+}
+
+.aboutvideo div:hover {
+    opacity: .9;
+}
+
+.ourmenubox {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: #fffafa;
+    gap: 15px;
+    padding: 100px 40px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.ourmenubox h3 {
+    color: #fb5849;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ourmenubox h3:before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: #fb5849;
+    position: absolute;
+    left: 25%;
+
+}
+
+.ourmenuproducts {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutinfo p {
+    color: black;
+}
+
+.product {
+    width: 320px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.product:hover .product_info {
+    top: 70%;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    transition: .5s;
+    background-color: #fb5849;
+    position: absolute;
+    left: 0;
+    top: 87%;
+}
+
+.product_info h1,
+p {
+    color: white;
+    position: relative;
+
+}
+
+.product_info p {
+    font-weight: 80;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.product span {
+    width: 60px;
+    height: 60px;
+    background-color: #fb5849;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.ourchefsbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+
+.ourchefsbox h2 {
+    color: #fb5849;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+
+}
+
+.chefbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.chef {
+    border: solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: .4s;
+}
+
+.chef h3 {
+    transition: .4s;
+
+}
+
+.chef_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    padding: 20px;
+}
+
+.chef_info h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chef:hover h3 {
+    color: #fb5849;
+}
+
+.chef_social_info {
+    inset: 0;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.679);
+}
+
+.chef:hover .chef_social_info {
+    opacity: 1;
+}
+
+.chef:hover {
+    border-color: #fb5849;
+}
+
+.chef_social_info ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.chef_social_info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.chef_social_info a:hover {
+    background-color: #fb5849;
+    color: white;
+}
+
+.contucontuctuscontainer {
+    width: 100%;
+    height: auto;
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/reservation-bg.jpg);
+    padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contactus {
+    width: 550px;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.contactus h3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.contactus h3:before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: -55px;
+}
+
+.number {
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.span {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fb5849;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.reservation {
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+.reservation .inputbox {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.inputbox div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputbox input,
+textarea {
+    padding: 10px 20px;
+    width: 200px;
+    outline: none;
+    border: 2px solid rgb(191, 187, 187);
+    transition: .4s;
+    border-radius: 7px;
+}
+
+.inputbox textarea {
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+}
+
+.reservation button {
+    width: 100%;
+    height: 50px;
+    background-color: #fb5849;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+
+.inputbox input:focus,
+textarea:focus {
+    border-color: #fb5849;
+}
+
+.klassyweekbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.klassyweek h3 {
+    color: #fb5849;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.klassyweek {
+    text-align: center;
+}
+
+.klassyweek ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 60px;
+}
+
+.klassyweek li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.klassyweek li:first-child {
+    color: #fb5849;
+}
+
+.foodlist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 15px;
+}
+
+.foodlist table {
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.foodlist p {
+    color: black;
+    padding: 15px;
+}
+
+.foodlist h3 {
+    padding: 15px;
+}
+
+.foodlist span {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fb5849;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #fb5849;
+    color: #fff;
+}
+
+footer ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: #fb5849;
+    border-radius: 50%;
+    transition: .4s;
+    text-decoration: none;
+
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+footer ul a:hover {
+    color: black;
+}
+
+label {
+    display: none;
+}
+
+#menubtn {
+    display: none;
+
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    label {
+        display: flex;
+    }
+
+    nav {
+        width: 80%;
+        position: absolute;
+        top: 100%;
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        right: 10%;
+        background-color: white;
+        transition: .4s;
+    }
+
+    header ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menubtn:checked~nav {
+        height: 300px;
+        padding: 20px;
+    }
+
+
+    .product {
+        width: 250px;
+        height: 350px;
+    }
+
+    .product_info {
+        top: 82%;
+    }
+
+    .product_info h1 {
+        font-size: 25px;
+    }
+
+    .product:hover .product_info {
+        top: 65%;
+    }
+
+    .ourmenubox {
+        align-items: center;
+    }
+
+    .foodlist {
+        flex-wrap: wrap;
+    }
+
+    .contactus {
+        align-items: center;
+    }
+}
+
+
+
+@media(max-width:768px) {
+    label {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        background-color: white;
+        transition: .4s;
+    }
+
+    header ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menubtn:checked~nav {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .ourmenubox {
+        align-items: center;
+    }
+
+    .product {
+        width: 320px;
+        height: 400px;
+    }
+
+    .product_info {
+        top: 82%;
+    }
+
+    .product_info h1 {
+        font-size: 32px;
+    }
+
+    .product:hover .product_info {
+        top: 66%;
+    }
+
+    .aboutbox {
+        width: 100%;
+    }
+
+    .foodlist {
+        flex-direction: column;
+    }
+
+    .aboutinfo {
+        width: 100%;
+    }
+
+    .contactus {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .klassyweekbox {
+        padding: 0;
+    }
+
+    .numbers {
+        flex-direction: column;
+    }
+
+    .foodlist table {
+        width: 100%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .numbers {
+        width: 100%;
+
+    }
+
+    .number {
+        width: 100%;
+    }
+
+    .inputbox div {
+        gap: 5px;
+    }
+
+    .contactus h3:before {
+        left: 108px;
+    }
+    .bunner{
+        flex-direction: column-reverse;
+    }
+
+    .bunnerside {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+    .mainbunnerinfo{
+        height: 400px;
+    }
+    .foodlist p{
+        padding: 10px;
+    }
+    .foodlist h3{
+        padding: 10px;
+    }
+    .foodlist span{
+        width: 60px;
+        height: 60px;
+    }
+    .foodlist table{
+        padding: 0;
+    }
+    header ul{
+        gap: 25px;
+
+    }
+    .contucontuctuscontainer{
+        padding: 100px 10px;
+        flex-wrap: wrap;
+    }
+    .reservation{
+        width: 100%;
+    }
+    .reservation .inputbox{
+        flex-direction: column;
+    }
+    .inputbox div{
+        flex-direction: column;
+    }
+    .inputbox input{
+        width: 100%;
+    }
+
+
+    .klassyweek{
+        width: 100%;
+    }
+    .mainbunnerinfo{
+        width: 100%;
+    }
+}
