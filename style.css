@@ -509,7 +509,7 @@ p {
 .inputbox input,
 textarea {
     padding: 10px 20px;
-    width: 200px;
+    width: 100%;
     outline: none;
     border: 2px solid rgb(191, 187, 187);
     transition: .4s;
