@@ -497,6 +497,8 @@ p {
 
 }
 
+.inp
+
 .inputbox div {
     width: 100%;
     display: flex;
@@ -512,6 +514,7 @@ textarea {
     border: 2px solid rgb(191, 187, 187);
     transition: .4s;
     border-radius: 7px;
+    font-size:18px;
 }
 
 .inputbox textarea {
