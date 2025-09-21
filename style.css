@@ -785,6 +785,10 @@ label {
         width: 100%;
     }
 
+    .aboutinfo ul{
+        gap:10px;
+    }
+
     .contactus {
         width: 100%;
         flex-direction: column;
@@ -844,6 +848,7 @@ label {
     .foodlist span{
         width: 60px;
         height: 60px;
+        font-size:16px;
     }
     .foodlist table{
         padding: 0;
