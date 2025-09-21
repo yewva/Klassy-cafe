@@ -183,7 +183,7 @@ header ul a:hover {
 }
 
 .ourmenubox {
-    width: 100%;
+    width: 1300px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -229,7 +229,7 @@ header ul a:hover {
 }
 
 .product {
-    width: 320px;
+    width: 280px;
     height: 450px;
     position: relative;
     overflow: hidden;
